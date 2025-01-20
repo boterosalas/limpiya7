@@ -1,3 +1,26 @@
+@use "variables";
+
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.navbar .container,
+.navbar .container-fluid,
+.navbar .container-sm,
+.navbar .container-md,
+.navbar .container-lg,
+.navbar .container-xl {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .navbar-brand {
   display: inline-block;
   padding-top: 0.3125rem;
@@ -255,7 +278,6 @@
 .navbar-expand > .container-xl {
   padding-right: 0;
   padding-left: 0;
-  flex-wrap: nowrap;
 }
 
 .navbar-expand .navbar-nav {
@@ -269,6 +291,15 @@
 .navbar-expand .navbar-nav .nav-link {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
+}
+
+.navbar-expand > .container,
+.navbar-expand > .container-fluid,
+.navbar-expand > .container-sm,
+.navbar-expand > .container-md,
+.navbar-expand > .container-lg,
+.navbar-expand > .container-xl {
+  flex-wrap: nowrap;
 }
 
 .navbar-expand .navbar-collapse {
@@ -380,4 +411,36 @@
 .navbar-dark .navbar-text a:hover,
 .navbar-dark .navbar-text a:focus {
   color: #fff;
+}
+
+@media (min-width: 992px) {
+  .nav-bar {
+    position: absolute;
+    z-index: 999;
+  }
+  .nav-bar .navbar {
+    background: none !important;
+  }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  padding: 30px 15px;
+  color: #ffffff;
+  font-weight: 600;
+  outline: none;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #fdac53;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-dark .navbar-nav .nav-link {
+    padding: 10px 0px;
+  }
+}
+
+.header-title{
+    font-size: 2rem;
 }

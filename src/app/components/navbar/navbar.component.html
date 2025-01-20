@@ -4,9 +4,9 @@
     <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
       <a href="index.html" class="navbar-brand">
         <h1 class="m-0 text-white display-4">
-          <span class="text-primary">D</span>ot<span class="text-primary"
-            >C</span
-          >om
+          <span class="text-primary">L</span>impiya<span class="text-primary"
+            >7</span
+          >
         </h1>
       </a>
       <button
@@ -22,11 +22,16 @@
         id="navbarCollapse"
       >
         <div class="navbar-nav ml-auto py-0">
-          <a href="index.html" class="nav-item nav-link active">Home</a>
-          <a href="about.html" class="nav-item nav-link">About</a>
-          <a href="service.html" class="nav-item nav-link">Services</a>
-          <a href="pricing.html" class="nav-item nav-link">Pricing</a>
-          <div class="nav-item dropdown">
+          <a
+            class="nav-item nav-link"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            *ngFor="let option of menuOptions"
+            [routerLink]="option.path"
+          >
+            {{ option.label }}
+          </a>
+          <!-- <div class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
               >Pages</a
             >
@@ -34,8 +39,7 @@
               <a href="blog.html" class="dropdown-item">Blog Grid</a>
               <a href="single.html" class="dropdown-item">Blog Detail</a>
             </div>
-          </div>
-          <a href="contact.html" class="nav-item nav-link">Contact</a>
+          </div> -->
         </div>
       </div>
     </nav>
@@ -43,12 +47,4 @@
 </div>
 <!-- Navbar End -->
 <!-- Page Header Start -->
-<div class="container-fluid page-header d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5 mb-5">
-    <h1 class="display-4 text-white mb-3 mt-0 mt-lg-5">Blog Detail</h1>
-    <div class="d-inline-flex text-white">
-        <p class="m-0"><a class="text-white" href="">Home</a></p>
-        <p class="m-0 px-2">/</p>
-        <p class="m-0">Detail</p>
-    </div>
-</div>
 <!-- Page Header Start -->
