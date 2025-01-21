@@ -1,4 +1,4 @@
-import { CUSTOM_ELEMENTS_SCHEMA, Component } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, Component, ViewEncapsulation } from '@angular/core';
 import { CONST } from '../../../utils/const';
 import { CommonModule } from '@angular/common';
 
@@ -8,9 +8,15 @@ import { CommonModule } from '@angular/common';
   templateUrl: './about-us.component.html',
   styleUrl: './about-us.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  encapsulation: ViewEncapsulation.None
 })
 export class AboutUsComponent {
   CONST = CONST;
+
+  navigationCss = {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
 
   slides = [
     {

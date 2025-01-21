@@ -1,1 +1,26 @@
-@import "variables";
+@use "variables" as *;
+
+.team-section {
+  swiper-container {
+    &::part(button-next),
+    &::part(button-prev) {
+      color: $color-primary;
+      display: none;
+      @include fromMin(800px) {
+        display: flex;
+      }
+    }
+    &::part(bullet-active) {
+      background-color: $color-primary;
+    }
+    &::part(pagination) {
+      margin-top: 20px;
+    }
+    .team-section__quote {
+      padding-bottom: 3rem;
+      @include fromMin(800px) {
+        padding: 0 5rem 3rem;
+      }
+    }
+  }
+}
