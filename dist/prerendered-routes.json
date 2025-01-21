@@ -1,6 +1,7 @@
 {
   "routes": {
     "/": {},
-    "/conocenos": {}
+    "/conocenos": {},
+    "/home": {}
   }
 }
