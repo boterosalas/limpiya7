@@ -20,6 +20,6 @@ export default `<!DOCTYPE html>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-  <link rel="modulepreload" href="chunk-O2EIZ43J.js"><script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-VH24FZIZ.js" type="module"></script></body>
+  <link rel="modulepreload" href="chunk-O2EIZ43J.js"><script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-64EYMUQ2.js" type="module"></script></body>
 </html>
 `;
