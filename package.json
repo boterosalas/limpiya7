@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:prod": "ng build --configuration production",
+    "build:prod": "ng build --configuration production --base-href =/limpiya7/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:limpiya7": "node dist/server/server.mjs"

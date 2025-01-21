@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/',
+  basePath: '/limpiya7',
   supportedLocales: {
   "en-US": ""
 },

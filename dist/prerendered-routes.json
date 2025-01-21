@@ -1,6 +1,7 @@
 {
   "routes": {
-    "/": {},
-    "/conocenos": {}
+    "/limpiya7": {},
+    "/limpiya7/": {},
+    "/limpiya7/conocenos": {}
   }
 }
