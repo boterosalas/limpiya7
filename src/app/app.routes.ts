@@ -14,9 +14,9 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./layouts/about-us/about-us.component').then((m) => m.AboutUsComponent),
   },
-  {
-    path: '**',
-    pathMatch: 'full',
-    redirectTo: '/limpiya7'
-  },
+  // {
+  //   path: '**',
+  //   pathMatch: 'full',
+  //   redirectTo: '/limpiya7'
+  // },
 ];
