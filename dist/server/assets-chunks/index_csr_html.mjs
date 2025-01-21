@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+export default `<!DOCTYPE html>
 <html lang="en" data-beasties-container="">
   <head>
     <meta charset="utf-8">
@@ -22,3 +22,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
   <link rel="modulepreload" href="chunk-O2EIZ43J.js"><script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-2SEKIDIH.js" type="module"></script></body>
 </html>
+`;

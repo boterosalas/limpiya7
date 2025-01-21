@@ -2,7 +2,7 @@
 <div class="container-fluid nav-bar p-0">
   <div class="container-lg p-0">
     <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
-      <a [routerLink]="'/'+PATHS.home" class="navbar-brand">
+      <a [routerLink]="PATHS.home" class="navbar-brand">
         <h1 class="m-0 text-white display-4">
           <span class="text-primary">L</span>impiya<span class="text-primary"
             >7</span
@@ -27,7 +27,7 @@
             routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }"
             *ngFor="let option of menuOptions"
-            [routerLink]="'/'+option.path"
+            [routerLink]="option.path"
           >
             {{ option.label }}
           </a>
