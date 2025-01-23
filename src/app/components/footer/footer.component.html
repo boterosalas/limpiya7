@@ -45,15 +45,34 @@
       <h5 class="font-weight-bold text-primary mb-4">Contáctanos</h5>
       <p>Contáctanos para tener el gusto de atenderte</p>
       <p>
-        <i class="fa fa-map-marker-alt text-primary mr-2"></i
-        >{{ CONST.addressContact }}
+        <a
+          [href]="CONST.addressGoogleMaps"
+          target="_blank"
+          class="link-unstyled"
+        >
+          <i class="fa fa-map-marker-alt text-primary mr-2"></i
+          >{{ CONST.addressContact }}
+        </a>
       </p>
       <p>
-        <i class="fa fa-phone-alt text-primary mr-2"></i
-        >{{ CONST.cellphoneContact }}
+        <a
+          [href]="'tel:' + CONST.cellphoneContact"
+          target="_blank"
+          class="link-unstyled"
+        >
+          <i class="fa fa-phone-alt text-primary mr-2"></i
+          >{{ CONST.cellphoneContact }}
+        </a>
       </p>
       <p>
-        <i class="fa fa-envelope text-primary mr-2"></i>{{ CONST.emailContact }}
+        <a
+          [href]="'mailto:' + CONST.emailContact"
+          target="_blank"
+          class="link-unstyled"
+        >
+          <i class="fa fa-envelope text-primary mr-2"></i
+          >{{ CONST.emailContact }}
+        </a>
       </p>
     </div>
   </div>

@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ChangeDetectorRef, Component } from '@angular/core';
+import { Router, RouterOutlet, Event, Scroll } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
-import {register} from 'swiper/element/bundle';
+import { register } from 'swiper/element/bundle';
+import { ViewportScroller } from '@angular/common';
+import { filter } from 'rxjs/operators';
 register();
 
 @Component({
