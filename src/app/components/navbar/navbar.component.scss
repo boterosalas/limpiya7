@@ -413,15 +413,15 @@
   color: #fff;
 }
 
-@media (min-width: 992px) {
-  .nav-bar {
-    position: absolute;
-    z-index: 999;
-  }
-  .nav-bar .navbar {
-    background: none !important;
-  }
-}
+// @media (min-width: 992px) {
+//   .nav-bar {
+//     position: absolute;
+//     z-index: 999;
+//   }
+//   .nav-bar .navbar {
+//     background: none !important;
+//   }
+// }
 
 .navbar-dark .navbar-nav .nav-link {
   padding: 30px 15px;
@@ -443,4 +443,12 @@
 
 .header-title{
     font-size: 2rem;
+}
+
+.custom-navbar{
+  position: fixed;
+  width: 100vw;
+  background-color: #131313;
+  top: 0;
+  height: 100px;
 }
